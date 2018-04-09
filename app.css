@@ -288,7 +288,7 @@ a {
 }
 
 .section-wrapper .skill-percentage:nth-child(2)::before {
-    width: 87%;
+    width: 95%;
     -webkit-animation: skill_2 0.6s ease;
     animation: skill_2 0.6s ease;
 }
@@ -300,13 +300,13 @@ a {
 }
 
 .section-wrapper .skill-percentage:nth-child(4)::before {
-    width: 90%;
+    width: 88%;
     -webkit-animation: skill_4 0.6s ease;
     animation: skill_4 0.6s ease;
 }
 
 .section-wrapper .skill-percentage:nth-child(5)::before {
-    width: 40%;
+    width: 75%;
     -webkit-animation: skill_5 0.6s ease;
     animation: skill_5 0.6s ease;
 }
@@ -318,11 +318,11 @@ a {
 }
 
 .section-wrapper .skill-percentage:nth-child(7)::before {
-    width: 30%;
+    width: 68%;
     -webkit-animation: skill_7 0.6s ease;
     animation: skill_7 0.6s ease;
 }
-
+/*HTML*/
 @-webkit-keyframes skill_1 {
     from {
         width: 0%;
@@ -341,12 +341,13 @@ a {
     }
 }
 
+/*CSS*/
 @-webkit-keyframes skill_2 {
     from {
         width: 0%;
     }
     to {
-        width: 87%;
+        width: 95%;
     }
 }
 
@@ -355,10 +356,11 @@ a {
         width: 0%;
     }
     to {
-        width: 87%;
+        width: 95%;
     }
 }
 
+/*JS*/
 @-webkit-keyframes skill_3 {
     from {
         width: 0%;
@@ -377,12 +379,13 @@ a {
     }
 }
 
+/*EXTJS*/
 @-webkit-keyframes skill_4 {
     from {
         width: 0%;
     }
     to {
-        width: 90%;
+        width: 88%;
     }
 }
 
@@ -391,16 +394,16 @@ a {
         width: 0%;
     }
     to {
-        width: 90%;
+        width: 88%;
     }
 }
-
+/*REACT*/
 @-webkit-keyframes skill_5 {
     from {
         width: 0%;
     }
     to {
-        width: 40%;
+        width: 75%;
     }
 }
 
@@ -409,10 +412,10 @@ a {
         width: 0%;
     }
     to {
-        width: 40%;
+        width: 75%;
     }
 }
-
+/*ANGULAR*/
 @-webkit-keyframes skill_6 {
     from {
         width: 0%;
@@ -431,12 +434,13 @@ a {
     }
 }
 
+/*WORDPRESS*/
 @-webkit-keyframes skill_7 {
     from {
         width: 0%;
     }
     to {
-        width: 30%;
+        width: 68%;
     }
 }
 
@@ -445,7 +449,7 @@ a {
         width: 0%;
     }
     to {
-        width: 30%;
+        width: 68%;
     }
 }
 
