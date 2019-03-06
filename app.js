@@ -9,8 +9,7 @@
         if (currentSection) {
             var len = allItems.length;
             var currentItem;
-            while (len) {
-                len--;
+            while (len--) {
                 currentItem = allItems[len];
                 currentItem.classList.add("hidden");
                 if (currentItem.className.startsWith(currentSection)) {

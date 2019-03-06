@@ -53,6 +53,10 @@ a {
     height: 100%;
 }
 
+.company-description{
+    margin-bottom: 34px;
+}
+
 .container {
     min-height: 600px;
 }
@@ -206,7 +210,7 @@ a {
 
 .experience .experience-title {
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .section-padding {
@@ -306,7 +310,7 @@ a {
 }
 
 .section-wrapper .skill-percentage:nth-child(5)::before {
-    width: 75%;
+    width: 81%;
     -webkit-animation: skill_5 0.6s ease;
     animation: skill_5 0.6s ease;
 }
@@ -403,7 +407,7 @@ a {
         width: 0%;
     }
     to {
-        width: 75%;
+        width: 81%;
     }
 }
 
@@ -412,7 +416,7 @@ a {
         width: 0%;
     }
     to {
-        width: 75%;
+        width: 81%;
     }
 }
 /*ANGULAR*/
