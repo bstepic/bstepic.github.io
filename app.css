@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Droid+Sans+Mono");
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
 .hidden {
     display: none;
 }
@@ -63,14 +72,20 @@ a {
 
 .profile {
     background: #fff;
-    width: 35%;
-    float: left;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
     color: #9099a0;
 }
 
 @media (max-width: 1000px) {
     .profile {
         width: 100%;
+        position: static;
+        z-index: 0;
     }
 }
 
@@ -150,18 +165,19 @@ a {
 
 .experience {
     background: #3d3e42;
-    width: 65%;
     float: left;
     position: relative;
     color: #9099a0;
     font-weight: 300;
-    min-height: 100%;
     min-height: 100vh;
+    width: 70%;
+    margin-left: 30%;
 }
 
 @media (max-width: 1000px) {
     .experience {
         width: 100%;
+        margin-left: 0;
     }
 }
 
@@ -329,7 +345,7 @@ a {
 /*HTML*/
 @-webkit-keyframes skill_1 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 92%;
@@ -338,7 +354,7 @@ a {
 
 @keyframes skill_1 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 92%;
@@ -348,7 +364,7 @@ a {
 /*CSS*/
 @-webkit-keyframes skill_2 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 95%;
@@ -357,7 +373,7 @@ a {
 
 @keyframes skill_2 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 95%;
@@ -367,7 +383,7 @@ a {
 /*JS*/
 @-webkit-keyframes skill_3 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 82%;
@@ -376,7 +392,7 @@ a {
 
 @keyframes skill_3 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 82%;
@@ -386,7 +402,7 @@ a {
 /*EXTJS*/
 @-webkit-keyframes skill_4 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 88%;
@@ -395,7 +411,7 @@ a {
 
 @keyframes skill_4 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 88%;
@@ -404,7 +420,7 @@ a {
 /*REACT*/
 @-webkit-keyframes skill_5 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 81%;
@@ -413,7 +429,7 @@ a {
 
 @keyframes skill_5 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 81%;
@@ -422,7 +438,7 @@ a {
 /*ANGULAR*/
 @-webkit-keyframes skill_6 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 60%;
@@ -431,7 +447,7 @@ a {
 
 @keyframes skill_6 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 60%;
@@ -441,7 +457,7 @@ a {
 /*WORDPRESS*/
 @-webkit-keyframes skill_7 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 68%;
@@ -450,7 +466,7 @@ a {
 
 @keyframes skill_7 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 68%;
@@ -480,7 +496,7 @@ a {
 
 @-webkit-keyframes tooling_1 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 72%;
@@ -489,7 +505,7 @@ a {
 
 @keyframes tooling_2 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 82%;
@@ -498,7 +514,7 @@ a {
 
 @-webkit-keyframes tooling_3 {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
         width: 61%;
