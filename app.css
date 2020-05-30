@@ -15,6 +15,7 @@ html {
 
 .professional-list li {
     cursor: pointer;
+    margin-right: 16px;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
@@ -164,7 +165,7 @@ a {
 }
 
 .experience {
-    background: #3d3e42;
+    background: #2c2d2f;
     float: left;
     position: relative;
     color: #9099a0;
@@ -303,55 +304,45 @@ a {
 /* programing skills percentages*/
 .section-wrapper .skill-percentage:nth-child(1)::before {
     width: 92%;
-    -webkit-animation: skill_1 0.6s ease;
     animation: skill_1 0.6s ease;
 }
 
 .section-wrapper .skill-percentage:nth-child(2)::before {
     width: 95%;
-    -webkit-animation: skill_2 0.6s ease;
     animation: skill_2 0.6s ease;
 }
 
 .section-wrapper .skill-percentage:nth-child(3)::before {
-    width: 82%;
-    -webkit-animation: skill_3 0.6s ease;
+    width: 87%;
     animation: skill_3 0.6s ease;
 }
 
 .section-wrapper .skill-percentage:nth-child(4)::before {
     width: 88%;
-    -webkit-animation: skill_4 0.6s ease;
     animation: skill_4 0.6s ease;
 }
 
 .section-wrapper .skill-percentage:nth-child(5)::before {
     width: 81%;
-    -webkit-animation: skill_5 0.6s ease;
     animation: skill_5 0.6s ease;
 }
 
 .section-wrapper .skill-percentage:nth-child(6)::before {
     width: 60%;
-    -webkit-animation: skill_6 0.6s ease;
     animation: skill_6 0.6s ease;
 }
 
 .section-wrapper .skill-percentage:nth-child(7)::before {
-    width: 68%;
-    -webkit-animation: skill_7 0.6s ease;
+    width: 74%;
     animation: skill_7 0.6s ease;
 }
-/*HTML*/
-@-webkit-keyframes skill_1 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 92%;
-    }
+
+.section-wrapper .skill-percentage:nth-child(8)::before {
+    width: 84%;
+    animation: skill_8 0.6s ease;
 }
 
+/*HTML*/
 @keyframes skill_1 {
     from {
         width: 0;
@@ -362,15 +353,6 @@ a {
 }
 
 /*CSS*/
-@-webkit-keyframes skill_2 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 95%;
-    }
-}
-
 @keyframes skill_2 {
     from {
         width: 0;
@@ -381,34 +363,16 @@ a {
 }
 
 /*JS*/
-@-webkit-keyframes skill_3 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 82%;
-    }
-}
-
 @keyframes skill_3 {
     from {
         width: 0;
     }
     to {
-        width: 82%;
+        width: 87%;
     }
 }
 
 /*EXTJS*/
-@-webkit-keyframes skill_4 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 88%;
-    }
-}
-
 @keyframes skill_4 {
     from {
         width: 0;
@@ -417,16 +381,8 @@ a {
         width: 88%;
     }
 }
-/*REACT*/
-@-webkit-keyframes skill_5 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 81%;
-    }
-}
 
+/*REACT*/
 @keyframes skill_5 {
     from {
         width: 0;
@@ -435,16 +391,8 @@ a {
         width: 81%;
     }
 }
-/*ANGULAR*/
-@-webkit-keyframes skill_6 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 60%;
-    }
-}
 
+/*ANGULAR*/
 @keyframes skill_6 {
     from {
         width: 0;
@@ -455,21 +403,22 @@ a {
 }
 
 /*WORDPRESS*/
-@-webkit-keyframes skill_7 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 68%;
-    }
-}
-
 @keyframes skill_7 {
     from {
         width: 0;
     }
     to {
-        width: 68%;
+        width: 74%;
+    }
+}
+
+/*Knockout JS*/
+@keyframes skill_8 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 84%;
     }
 }
 
@@ -477,24 +426,21 @@ a {
 /* programing tools percentages*/
 .section-wrapper .skill-percentage-tooling:nth-child(1)::before {
     width: 72%;
-    -webkit-animation: tooling_1 0.6s ease;
     animation: tooling_1 0.6s ease;
 }
 
 .section-wrapper .skill-percentage-tooling:nth-child(2)::before {
     width: 82%;
-    -webkit-animation: tooling_2 0.6s ease;
     animation: tooling_2 0.6s ease;
 }
 
 .section-wrapper .skill-percentage-tooling:nth-child(3)::before {
     width: 61%;
-    -webkit-animation: tooling_3 0.6s ease;
     animation: tooling_3 0.6s ease;
 }
 
 
-@-webkit-keyframes tooling_1 {
+@keyframes tooling_1 {
     from {
         width: 0;
     }
@@ -512,11 +458,30 @@ a {
     }
 }
 
-@-webkit-keyframes tooling_3 {
+@keyframes tooling_3 {
     from {
         width: 0;
     }
     to {
         width: 61%;
+    }
+}
+
+.pulsate {
+    animation: pulsate 2s ease-out;
+    animation-iteration-count: infinite; 
+    opacity: 1;
+}
+
+
+@keyframes pulsate {
+    0% { 
+        opacity: 1;
+    }
+    50% { 
+        opacity: 0.7;
+    }
+    100% { 
+        opacity: 1;
     }
 }
