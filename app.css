@@ -43,6 +43,13 @@ a {
     text-decoration: none;
 }
 
+small{
+    font-size: 14px;
+    color: #9099a0;
+    display: inline-block;
+    margin-left: 16px;
+}
+
 .clearfix::after, .clearfix::before {
     content: " ";
     display: table;
