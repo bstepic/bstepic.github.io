@@ -29,7 +29,7 @@ html {
     margin-right: 10px;
     padding-right: 20px;
     transition: all 0.2s;
-    border-right: 1px solid var(--white);
+    border-right: 1px solid var(--link-color);
 }
 
 .professional-list li:hover {
@@ -50,7 +50,7 @@ body {
 body {
     font-family: "Droid Sans Mono", monospace;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.6em;
 }
 
 a {
@@ -102,7 +102,7 @@ small {
     margin-bottom: 100px;
 }
 
-.experience {
+.content {
     background: var(--experience-bg);
     color: var(--font-color);
     font-weight: 300;
@@ -112,7 +112,7 @@ small {
     overflow: hidden;
 }
 
-.experience .professional-list {
+.content .professional-list {
     color: var(--link-color);
     text-align: left;
     text-transform: uppercase;
@@ -121,7 +121,7 @@ small {
     font-weight: 400;
 }
 
-.experience .professional-list li {
+.content .professional-list li {
     display: inline-block;
 }
 
@@ -133,12 +133,12 @@ small {
 
 .experience-info {
     flex: 1;
+    padding-right: 100px;
 }
 
 .experience-description {
     flex: 2.4;
 }
-
 
 .experience-title {
     color: var(--white);
@@ -372,7 +372,7 @@ small {
         padding: 80px 15% 40px 10%;
     }
 
-    .experience {
+    .content {
         width: 100vw;
         margin-left: 0;
     }
@@ -394,15 +394,10 @@ small {
 
     .experience-item {
         flex-direction: column;
+        margin-right: 10px;
     }
 
-    .experience .company-wrapper {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .experience .job-wrapper {
-        width: 100%;
-        margin-bottom: 40px;
+    .experience-info {
+        padding-right: 40px;
     }
 }
