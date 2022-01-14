@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Droid+Sans+Mono");
 
+:root {
+    --white: #fff;
+    --link-color: #49c5c5;
+    --link-hover: #83d7d7;
+    --font-color: #9099a0;
+    --dark-color: #4a4e51;
+    --experience-bg: #2c2d2f;
+    --tools-color: #3bb37c;
+}
+
 html {
     overflow: scroll;
     overflow-x: hidden;
@@ -19,11 +29,11 @@ html {
     margin-right: 10px;
     padding-right: 20px;
     transition: all 0.2s;
-    border-right: 1px solid #fff;
+    border-right: 1px solid var(--white);
 }
 
 .professional-list li:hover {
-    color: #83d7d7;
+    color: var(--link-hover);
 }
 
 *,
@@ -44,17 +54,17 @@ body {
 }
 
 a {
-    color: #49c5c5;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 small {
     font-size: 14px;
-    color: #9099a0;
+    color: var(--font-color);
 }
 
 .bold {
-    color: #4a4e51;
+    color: var(--dark-color);
     font-weight: 600;
 }
 
@@ -63,7 +73,7 @@ small {
 }
 
 .profile {
-    background: #fff;
+    background: var(--white);
     width: 30vw;
     min-height: 70vh;
     position: fixed;
@@ -71,12 +81,12 @@ small {
     left: 0;
     z-index: 1;
     overflow-x: hidden;
-    color: #9099a0;
+    color: var(--font-color);
 }
 
 .profile h1 {
     font-size: 2.5em;
-    color: #4a4e51;
+    color: var(--dark-color);
     text-transform: uppercase;
     line-height: 1.2em;
 }
@@ -97,18 +107,17 @@ small {
 }
 
 .experience {
-    background: #2c2d2f;
-    float: left;
-    position: relative;
-    color: #9099a0;
+    background: var(--experience-bg);
+    color: var(--font-color);
     font-weight: 300;
     min-height: 100vh;
     width: 70vw;
-    margin-left: 30%;
+    margin-left: 30vw;
+    overflow: hidden;
 }
 
 .experience .professional-list {
-    color: #49c5c5;
+    color: var(--link-color);
     text-align: left;
     text-transform: uppercase;
     font-size: 1.2em;
@@ -118,6 +127,19 @@ small {
 
 .experience .professional-list li {
     display: inline-block;
+}
+
+.experience-item {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.experience-info {
+    flex: 1;
+}
+
+.experience-description {
+    flex: 2.4;
 }
 
 .experience .company-wrapper {
@@ -137,7 +159,7 @@ small {
 }
 
 .experience .experience-title {
-    color: white;
+    color: var(--white);
     margin-bottom: 10px;
     display: inline-block;
 }
@@ -150,7 +172,7 @@ small {
     width: 50%;
     float: left;
     text-align: left;
-    color: #9099a0;
+    color: var(--font-color);
     font-weight: 300;
     margin-bottom: 40px;
 }
@@ -160,7 +182,7 @@ small {
 }
 
 .section-wrapper h3.section-title {
-    color: #49c5c5;
+    color: var(--link-color);
     text-align: left;
     text-transform: uppercase;
     font-size: 1.2em;
@@ -179,7 +201,7 @@ small {
     content: "";
     width: 100%;
     height: 6px;
-    background: #4a4e51;
+    background: var(--dark-color);
     display: block;
     margin-top: 3px;
 }
@@ -188,14 +210,14 @@ small {
 .skill-percentage-tooling::before {
     content: "";
     height: 6px;
-    background: #49c5c5;
+    background: var(--link-color);
     position: absolute;
     margin-top: 3px;
     bottom: 0;
 }
 
 .skill-percentage-tooling::before {
-    background: #3bb37c;
+    background: var(--tools-color);
 }
 
 /* programing skills percentages*/
@@ -362,32 +384,19 @@ small {
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
+    .profile {
+        width: 100vw;
+        position: static;
+        z-index: 0;
+    }
+
     .contact-info {
         margin-top: 70px;
     }
 
-    .profile {
-        width: 100%;
-        position: static;
-        z-index: 0;
-    }
-
     .profile h1 {
         padding-top: 20px;
-    }
-
-    .contact-presentation {
-        margin-top: 70px;
-        margin-bottom: 70px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .profile {
-        width: 100%;
-        position: static;
-        z-index: 0;
     }
 
     .contact-presentation {
@@ -421,6 +430,10 @@ small {
 
     .section-padding {
         padding: 40px 10% 20px 5%;
+    }
+
+    .experience-item {
+        flex-direction: column;
     }
 
     .experience .company-wrapper {
