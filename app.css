@@ -211,7 +211,7 @@ small {
 }
 
 .skill-percentage:nth-child(6)::before {
-    width: 60%;
+    width: 75%;
     animation: skill_6 0.6s ease;
 }
 
@@ -255,7 +255,7 @@ small {
     }
 }
 
-/*EXTJS*/
+/*TYPESCRIPT*/
 @keyframes skill_4 {
     from {
         width: 0;
@@ -275,13 +275,13 @@ small {
     }
 }
 
-/*ANGULAR*/
+/*EXT*/
 @keyframes skill_6 {
     from {
         width: 0;
     }
     to {
-        width: 60%;
+        width: 75%;
     }
 }
 
@@ -307,7 +307,7 @@ small {
 
 /* programing tools percentages*/
 .skill-percentage-tooling:nth-child(1)::before {
-    width: 72%;
+    width: 82%;
     animation: tooling_1 0.6s ease;
 }
 
@@ -317,7 +317,7 @@ small {
 }
 
 .skill-percentage-tooling:nth-child(3)::before {
-    width: 61%;
+    width: 71%;
     animation: tooling_3 0.6s ease;
 }
 
@@ -326,7 +326,7 @@ small {
         width: 0;
     }
     to {
-        width: 72%;
+        width: 82%;
     }
 }
 
@@ -344,7 +344,7 @@ small {
         width: 0;
     }
     to {
-        width: 61%;
+        width: 71%;
     }
 }
 
