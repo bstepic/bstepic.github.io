@@ -1,14 +1,14 @@
 (function () {
     // get necessary elements
-    var allItems = document.querySelector(".all-items").children;
-    var experienceItems = document.querySelector(".professional-list");
+    const allItems = document.querySelector(".all-items").children;
+    const experienceItems = document.querySelector(".professional-list");
 
     // experience items click handler
     experienceItems.onclick = function (e) {
-        var currentSection = e.target.getAttribute("id");
+        const currentSection = e.target.getAttribute("id");
         if (currentSection) {
-            var len = allItems.length;
-            var currentItem;
+            let len = allItems.length;
+            let currentItem;
             while (len--) {
                 currentItem = allItems[len];
                 currentItem.classList.add("hidden");

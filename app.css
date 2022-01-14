@@ -4,6 +4,7 @@ html {
     overflow: scroll;
     overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
     width: 0;
     background: transparent;
@@ -15,9 +16,10 @@ html {
 
 .professional-list li {
     cursor: pointer;
-    margin-right: 16px;
-    -webkit-transition: all 0.2s;
+    margin-right: 10px;
+    padding-right: 20px;
     transition: all 0.2s;
+    border-right: 1px solid #fff;
 }
 
 .professional-list li:hover {
@@ -32,7 +34,7 @@ html {
 
 html,
 body {
-    height: 100%;
+    height: 100vh;
 }
 
 body {
@@ -51,38 +53,19 @@ small {
     color: #9099a0;
 }
 
-.clearfix::after,
-.clearfix::before {
-    content: " ";
-    display: table;
-}
-
-.clearfix::after {
-    clear: both;
-}
-
 .bold {
     color: #4a4e51;
-    font-weight: 400;
-}
-
-.resume-wrapper {
-    position: relative;
-    text-align: center;
-    height: 100%;
+    font-weight: 600;
 }
 
 .company-description {
     margin-bottom: 34px;
 }
 
-.container {
-    min-height: 600px;
-}
-
 .profile {
     background: #fff;
-    width: 30%;
+    width: 30vw;
+    min-height: 70vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -91,86 +74,26 @@ small {
     color: #9099a0;
 }
 
-@media (max-width: 1000px) {
-    .profile {
-        width: 100%;
-        position: static;
-        z-index: 0;
-    }
-}
-
 .profile h1 {
     font-size: 2.5em;
-    text-align: left;
     color: #4a4e51;
     text-transform: uppercase;
     line-height: 1.2em;
 }
 
-@media (max-width: 1250px) {
-    .profile h1 {
-        padding-top: 20px;
-    }
-}
-
-@media (max-width: 450px) {
-    .profile h1 {
-        font-size: 1.8em;
-        padding-top: 20px;
-    }
-}
-
 .profile li {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.profile .contact-info {
+.contact-info {
     margin-top: 100px;
-    font-weight: 300;
 }
 
-@media (max-width: 1250px) {
-    .profile .contact-info {
-        margin-top: 70px;
-    }
-}
-
-@media (max-width: 450px) {
-    .profile .contact-info {
-        margin-top: 50px;
-    }
-}
-
-.profile .list-titles {
-    font-weight: 600;
-    color: #4a4e51;
-    text-align: left;
-}
-
-.profile .list-content {
-    float: right;
-    font-weight: 300;
-}
-
-.profile .contact-presentation {
-    text-align: left;
-    font-weight: 300;
+.contact-presentation {
     margin-top: 100px;
     margin-bottom: 100px;
-}
-
-@media (max-width: 1250px) {
-    .profile .contact-presentation {
-        margin-top: 70px;
-        margin-bottom: 70px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .profile .contact-presentation {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
 }
 
 .experience {
@@ -180,15 +103,8 @@ small {
     color: #9099a0;
     font-weight: 300;
     min-height: 100vh;
-    width: 70%;
+    width: 70vw;
     margin-left: 30%;
-}
-
-@media (max-width: 1000px) {
-    .experience {
-        width: 100%;
-        margin-left: 0;
-    }
 }
 
 .experience .professional-list {
@@ -212,26 +128,12 @@ small {
     margin-bottom: 60px;
 }
 
-@media (max-width: 450px) {
-    .experience .company-wrapper {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
 .experience .job-wrapper {
     width: 70%;
     float: left;
     text-align: left;
     padding-right: 5%;
     margin-bottom: 60px;
-}
-
-@media (max-width: 450px) {
-    .experience .job-wrapper {
-        width: 100%;
-        margin-bottom: 40px;
-    }
 }
 
 .experience .experience-title {
@@ -244,18 +146,6 @@ small {
     padding: 60px 60px 40px 40px;
 }
 
-@media (max-width: 1000px) {
-    .section-padding {
-        padding: 80px 15% 40px 10%;
-    }
-}
-
-@media (max-width: 450px) {
-    .section-padding {
-        padding: 40px 10% 20px 5%;
-    }
-}
-
 .section-wrapper {
     width: 50%;
     float: left;
@@ -263,12 +153,6 @@ small {
     color: #9099a0;
     font-weight: 300;
     margin-bottom: 40px;
-}
-
-@media (max-width: 450px) {
-    .section-wrapper {
-        width: 100%;
-    }
 }
 
 .section-wrapper:nth-child(3) {
@@ -478,20 +362,74 @@ small {
     }
 }
 
-.pulsate {
-    animation: pulsate 2s ease-out;
-    animation-iteration-count: infinite;
-    opacity: 1;
+@media (max-width: 1250px) {
+    .contact-info {
+        margin-top: 70px;
+    }
+
+    .profile {
+        width: 100%;
+        position: static;
+        z-index: 0;
+    }
+
+    .profile h1 {
+        padding-top: 20px;
+    }
+
+    .contact-presentation {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
 }
 
-@keyframes pulsate {
-    0% {
-        opacity: 1;
+@media (max-width: 1000px) {
+    .profile {
+        width: 100%;
+        position: static;
+        z-index: 0;
     }
-    50% {
-        opacity: 0.7;
+
+    .contact-presentation {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
-    100% {
-        opacity: 1;
+
+    .section-padding {
+        padding: 80px 15% 40px 10%;
+    }
+
+    .experience {
+        width: 100vw;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .profile h1 {
+        font-size: 1.8em;
+        padding-top: 20px;
+    }
+
+    .contact-info {
+        margin-top: 50px;
+    }
+
+    .section-wrapper {
+        width: 100%;
+    }
+
+    .section-padding {
+        padding: 40px 10% 20px 5%;
+    }
+
+    .experience .company-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .experience .job-wrapper {
+        width: 100%;
+        margin-bottom: 40px;
     }
 }
