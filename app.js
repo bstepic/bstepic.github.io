@@ -1,6 +1,6 @@
 (function () {
     // get necessary elements
-    const allItems = document.querySelector(".experience-container").children;
+    const allItems = document.querySelector(".content-container").children;
     const experienceItems = document.querySelector(".professional-list");
 
     // experience items click handler

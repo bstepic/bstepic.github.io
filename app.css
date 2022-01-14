@@ -125,22 +125,22 @@ small {
     display: inline-block;
 }
 
-.experience-item {
+.content-item {
     display: flex;
     margin-right: 100px;
     margin-bottom: 60px;
 }
 
-.experience-info {
+.content-info {
     flex: 1;
     padding-right: 100px;
 }
 
-.experience-description {
+.content-desc {
     flex: 2.4;
 }
 
-.experience-title {
+.content-title {
     color: var(--white);
     margin-bottom: 10px;
     display: inline-block;
@@ -392,12 +392,12 @@ small {
         padding: 40px 10% 20px 5%;
     }
 
-    .experience-item {
+    .content-item {
         flex-direction: column;
         margin-right: 10px;
     }
 
-    .experience-info {
+    .content-info {
         padding-right: 40px;
     }
 }
