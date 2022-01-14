@@ -127,6 +127,7 @@ small {
 
 .experience-item {
     display: flex;
+    margin-right: 100px;
     margin-bottom: 60px;
 }
 
@@ -153,35 +154,13 @@ small {
     padding: 60px 60px 40px 40px;
 }
 
-.section-wrapper {
-    width: 50%;
-    float: left;
-    text-align: left;
-    color: var(--font-color);
-    font-weight: 300;
-    margin-bottom: 40px;
-}
-
-.section-wrapper:nth-child(3) {
-    padding-right: 8%;
-}
-
-.section-wrapper h3.section-title {
-    color: var(--link-color);
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    font-weight: 400;
-}
-
-.section-wrapper .skill-percentage,
+.skill-percentage,
 .skill-percentage-tooling {
     margin-bottom: 10px;
     position: relative;
 }
 
-.section-wrapper .skill-percentage::after,
+.skill-percentage::after,
 .skill-percentage-tooling::after {
     content: "";
     width: 100%;
@@ -191,7 +170,7 @@ small {
     margin-top: 3px;
 }
 
-.section-wrapper .skill-percentage::before,
+.skill-percentage::before,
 .skill-percentage-tooling::before {
     content: "";
     height: 6px;
@@ -206,42 +185,42 @@ small {
 }
 
 /* programing skills percentages*/
-.section-wrapper .skill-percentage:nth-child(1)::before {
+.skill-percentage:nth-child(1)::before {
     width: 92%;
     animation: skill_1 0.6s ease;
 }
 
-.section-wrapper .skill-percentage:nth-child(2)::before {
+.skill-percentage:nth-child(2)::before {
     width: 95%;
     animation: skill_2 0.6s ease;
 }
 
-.section-wrapper .skill-percentage:nth-child(3)::before {
+.skill-percentage:nth-child(3)::before {
     width: 87%;
     animation: skill_3 0.6s ease;
 }
 
-.section-wrapper .skill-percentage:nth-child(4)::before {
+.skill-percentage:nth-child(4)::before {
     width: 88%;
     animation: skill_4 0.6s ease;
 }
 
-.section-wrapper .skill-percentage:nth-child(5)::before {
+.skill-percentage:nth-child(5)::before {
     width: 81%;
     animation: skill_5 0.6s ease;
 }
 
-.section-wrapper .skill-percentage:nth-child(6)::before {
+.skill-percentage:nth-child(6)::before {
     width: 60%;
     animation: skill_6 0.6s ease;
 }
 
-.section-wrapper .skill-percentage:nth-child(7)::before {
+.skill-percentage:nth-child(7)::before {
     width: 74%;
     animation: skill_7 0.6s ease;
 }
 
-.section-wrapper .skill-percentage:nth-child(8)::before {
+.skill-percentage:nth-child(8)::before {
     width: 84%;
     animation: skill_8 0.6s ease;
 }
@@ -327,17 +306,17 @@ small {
 }
 
 /* programing tools percentages*/
-.section-wrapper .skill-percentage-tooling:nth-child(1)::before {
+.skill-percentage-tooling:nth-child(1)::before {
     width: 72%;
     animation: tooling_1 0.6s ease;
 }
 
-.section-wrapper .skill-percentage-tooling:nth-child(2)::before {
+.skill-percentage-tooling:nth-child(2)::before {
     width: 82%;
     animation: tooling_2 0.6s ease;
 }
 
-.section-wrapper .skill-percentage-tooling:nth-child(3)::before {
+.skill-percentage-tooling:nth-child(3)::before {
     width: 61%;
     animation: tooling_3 0.6s ease;
 }
@@ -407,10 +386,6 @@ small {
 
     .contact-info {
         margin-top: 50px;
-    }
-
-    .section-wrapper {
-        width: 100%;
     }
 
     .section-padding {
