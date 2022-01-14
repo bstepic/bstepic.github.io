@@ -68,10 +68,6 @@ small {
     font-weight: 600;
 }
 
-.company-description {
-    margin-bottom: 34px;
-}
-
 .profile {
     background: var(--white);
     width: 30vw;
@@ -142,26 +138,15 @@ small {
     flex: 2.4;
 }
 
-.experience .company-wrapper {
-    width: 30%;
-    float: left;
-    text-align: left;
-    padding-right: 5%;
-    margin-bottom: 60px;
-}
 
-.experience .job-wrapper {
-    width: 70%;
-    float: left;
-    text-align: left;
-    padding-right: 5%;
-    margin-bottom: 60px;
-}
-
-.experience .experience-title {
+.experience-title {
     color: var(--white);
     margin-bottom: 10px;
     display: inline-block;
+}
+
+.experience-project-container {
+    margin-bottom: 40px;
 }
 
 .section-padding {
