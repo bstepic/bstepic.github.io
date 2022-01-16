@@ -116,7 +116,7 @@ small {
     overflow: hidden;
 }
 
-.content .professional-list {
+.professional-list {
     color: var(--link-color);
     text-align: left;
     font-size: 1.4em;
@@ -124,7 +124,7 @@ small {
     font-weight: 400;
 }
 
-.content .professional-list li {
+.professional-list li {
     display: inline-block;
 }
 
@@ -389,6 +389,15 @@ small {
 
     .contact-info {
         margin-top: 50px;
+    }
+
+    .professional-list {
+        margin-bottom: 40px;
+        font-size: 1.2rem;
+    }
+
+    .professional-list li {
+        margin-bottom: 10px;
     }
 
     .section-padding {
